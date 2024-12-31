@@ -12,10 +12,7 @@ public class Principal {
         Scanner lectura = new Scanner(System.in);
         int opcionElegida = 0;
 
-        // Esta instancia se utilizará para realizar consultas de conversiones de moneda.
-        ConsultaConversion consulta = new ConsultaConversion();
-        /* La razón de pasarle como parámetro una instancia de 'ConsultaConversion' al constructor de 'Calculos' es porque la clase
-        'Calculos' necesita tener acceso a una instancia de ConsultaConversion para poder realizar las conversiones de moneda. */
+        
         Calculos calculos = new Calculos(consulta);
         GeneradorDeArchivos generador = new GeneradorDeArchivos();
 
